@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/World-capital-quiz/static/css/main.82a1a97e.css",
+    "main.js": "/World-capital-quiz/static/js/main.7738fb6f.js",
+    "index.html": "/World-capital-quiz/index.html",
+    "main.82a1a97e.css.map": "/World-capital-quiz/static/css/main.82a1a97e.css.map",
+    "main.7738fb6f.js.map": "/World-capital-quiz/static/js/main.7738fb6f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.82a1a97e.css",
+    "static/js/main.7738fb6f.js"
+  ]
+}

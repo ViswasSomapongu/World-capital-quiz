@@ -7,7 +7,7 @@ function CapitalCityQuiz() {
   const [totalScore, setTotalScore] = useState(0);
   const [gameOver, setGameOver] = useState(false);
   const [hint, setHint] = useState(null);
-
+  const [userInput, setUserInput] = useState('');
 
   const generateRandomCountry = () => {
     const randomIndex = Math.floor(Math.random() * Countries.length);
@@ -20,6 +20,7 @@ function CapitalCityQuiz() {
   const nextQuestion = (countries) => {
     const randomCountry = generateRandomCountry();
     setHint(null)
+    setUserInput('')
     setCurrentCountry(randomCountry);
   };
 
@@ -45,6 +46,7 @@ function CapitalCityQuiz() {
   console.log(currentCountry)
 
   const handleSkip = () => {
+    setUserInput('')
     nextQuestion(Countries);
   };
 
@@ -53,6 +55,9 @@ function CapitalCityQuiz() {
     setHint(hint);
   };
 
+  const handleReveal = () => {
+    setUserInput(currentCountry.capital)
+  };
   return (
 
     <div id="app">
@@ -88,12 +93,13 @@ function CapitalCityQuiz() {
               placeholder="Enter the capital"
               autoFocus
               autoComplete="off"
-
+              value={userInput}
             />
           </div>
           <div>
             <div className="button-container">
 
+              <button type="button" onClick={handleReveal}>Reveal</button>
               <button type="button" onClick={handleSkip}>Skip</button>
               <button type="button" onClick={handleHint}>Hint</button>
             </div>
