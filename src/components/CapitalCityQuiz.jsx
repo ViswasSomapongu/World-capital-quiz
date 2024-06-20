@@ -58,6 +58,11 @@ function CapitalCityQuiz() {
   const handleReveal = () => {
     setUserInput(currentCountry.capital)
   };
+
+
+  const handleInputChange = (event) => {
+    setUserInput(event.target.value);
+  };
   return (
 
     <div id="app">
@@ -91,9 +96,10 @@ function CapitalCityQuiz() {
               name="answer"
               id="userInput"
               placeholder="Enter the capital"
-              autoFocus
+              
               autoComplete="off"
               value={userInput}
+              onChange={handleInputChange}
             />
           </div>
           <div>
