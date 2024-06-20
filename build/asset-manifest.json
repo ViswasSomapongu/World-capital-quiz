@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/World-capital-quiz/static/css/main.d73ba37a.css",
-    "main.js": "/World-capital-quiz/static/js/main.71d7a8df.js",
+    "main.js": "/World-capital-quiz/static/js/main.8aeb453d.js",
     "index.html": "/World-capital-quiz/index.html",
     "main.d73ba37a.css.map": "/World-capital-quiz/static/css/main.d73ba37a.css.map",
-    "main.71d7a8df.js.map": "/World-capital-quiz/static/js/main.71d7a8df.js.map"
+    "main.8aeb453d.js.map": "/World-capital-quiz/static/js/main.8aeb453d.js.map"
   },
   "entrypoints": [
     "static/css/main.d73ba37a.css",
-    "static/js/main.71d7a8df.js"
+    "static/js/main.8aeb453d.js"
   ]
 }
